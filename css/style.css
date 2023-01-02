@@ -1,0 +1,153 @@
+*{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+
+}
+
+header{
+          width: 100%; height: 100vh;
+          background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('../Taj mahal Pitchure.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+}
+
+nav{
+          width: 100%; height: 15vh;
+          background: rgba(0,0,0,0.2);
+          color: white;
+          display: flex; justify-content: space-between;
+          align-items: center;
+          text-transform: uppercase;
+}
+
+nav .logo{
+          width: 25%;
+          text-align: center;
+          font-family: 'Josefin Sans', sans-serif;
+}
+
+
+ nav .logo .animate__heartBeat{
+          color: #00b894;
+          animation: beat .25s infinite alternate;
+ }
+ @keyframes beat{
+	to { transform: scale(1.4); }
+}
+
+
+nav .manu{
+          width: 40%;
+          display: flex; justify-content: space-around;
+}
+
+nav .manu a{
+          width: 25%;
+          text-decoration: none; color: white;
+          font-weight: bold;
+} 
+nav .manu a:hover{
+          padding: 5px 5px;
+          font-size: 15px;
+          text-align: center;
+          cursor: pointer;
+          outline: none;
+          color: #fff;
+          background-color: #04AA6D;
+          border: none;
+          border-radius: 15px;
+          box-shadow: 0 9px #999;
+}
+
+/* nav .manu a:first-child{
+         color: #00b894;
+} */
+main{
+          width: 100%; height: 85vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          color: white;
+}
+
+section{
+
+}
+section h3{
+          font-size: 35px;
+          font-weight: 200;
+          letter-spacing: 3px;
+          text-shadow: 1px 1px 2px black;
+}
+section h1{
+          margin: 30px 0 20px 0;
+          font-size: 55px;
+          font-weight: 700;
+          text-shadow: 2px 1px 5px black;
+          text-transform: uppercase;
+}
+
+section p{
+          font-size: 25px;
+          color: #eee;
+          word-spacing: 2px;
+          margin-bottom: 25px;
+          text-shadow: 1px 1px 1px black;
+}
+ section a{
+          padding: 12px 3px ;
+          border-radius: 4px;
+          outline: none;
+          text-transform: uppercase;
+          font-size: 30px;
+          font-weight: 500;
+          text-decoration: none;
+          letter-spacing: 1px;
+          transition: all .5s ease;
+}
+section .btnone{
+          /* background: #; */
+          background: #fff;
+          color: #000;
+          border-radius: 20px;
+}
+
+.btnone:hover{
+          /* background: #00b894;
+          color: white; */
+          background: rgb(104, 104, 143);
+}
+section .btntwo{
+          background: #00b894;
+          color: white;
+          border-radius: 20px;
+}
+
+.btntwo:hover{
+          background: rgb(179, 153, 153);
+          color: #000;  
+}
+.change_content:after{
+          content: '';
+          animation: changetext 10s infinite linear;
+          color: #00b894;
+}
+@keyframes changetext {
+          0%{content: "Noida";}
+          20%{content: "Agra";}
+          35%{content: "Ghaziabad";}
+         60%{content: "Kerla";}
+         80%{content: "Delhi";}
+         100%{content: "Mumbai";}
+}
+
+
+/* nav .manu a:about{
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+} */
